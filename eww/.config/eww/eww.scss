@@ -1,0 +1,109 @@
+* {
+  all: unset;
+  background: transparent;
+  font-family: "Maple Mono", monospace;
+}
+
+window {
+  background: transparent;
+}
+
+.container {
+  background-color: #101827;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2964a1;
+  color: #d8f3ff;
+  border-radius: 12px;
+}
+
+.userinfo-parent {
+  background-color: #193a68;
+  color: #b9e6ff;
+  border-radius: 12px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2964a1;
+}
+
+.userinfo-child {
+  color: #d8f3ff;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d8f3ff;
+}
+
+.button-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b9e6ff;
+}
+
+.completelytrans {
+  background: none;
+}
+
+.button {
+  border-radius: 6px;
+  margin: 10px;
+  color: #b9e6ff;
+}
+
+.button:hover {
+  background-color: #2964a1;
+  color: #f0fbff;
+  transition-duration: 150ms;
+}
+
+.button:active {
+  background-color: #fb1979;
+  color: #101827;
+  transition-duration: 150ms;
+}
+
+.poweroff-button {
+  border-radius: 6px;
+  margin: 10px;
+  color: #ff8ac6;
+}
+
+.poweroff-button:hover {
+  background-color: #fb1979;
+  color: #101827;
+  transition-duration: 150ms;
+}
+
+.poweroff-button:active {
+  background-color: #a22774;
+  color: #f0fbff;
+  transition-duration: 150ms;
+}
+
+.suspend-button {
+  border-radius: 6px;
+  margin: 10px;
+  color: #49ace0;
+}
+
+.suspend-button:hover {
+  background-color: #49ace0;
+  color: #101827;
+  transition-duration: 150ms;
+}
+
+.suspend-button:active {
+  margin-right: 0.2cm;
+  background-color: #6fd0ff;
+  color: #101827;
+  transition-duration: 150ms;
+}
+
+.icon-label {
+  font-size: 45px;
+  font-weight: normal;
+  color: #fb1979;
+}

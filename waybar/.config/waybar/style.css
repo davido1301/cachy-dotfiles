@@ -1,0 +1,132 @@
+* {
+  /* General taskbar font */
+  font-family: "Maple Mono", monospace;
+  border-radius: 33px;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  background-image: linear-gradient(to bottom, #101827 100%);
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+  border: 1px solid rgba(73, 172, 224, 0.18);
+}
+
+/* Main modules */
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-image: linear-gradient(to bottom, #193a68 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #b9e6ff;
+
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#clock {
+  margin-right: 6px;
+  color: #49ace0;
+}
+
+/* Hover states */
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#clock:hover {
+  background-image: linear-gradient(to bottom, #fb1979 100%);
+  color: #101827;
+  transition-duration: 120ms;
+}
+
+/* App launcher */
+#custom-applauncher {
+  font-weight: bold;
+  color: #fb1979;
+  transition-duration: 120ms;
+}
+
+#custom-applauncher:hover {
+  background-image: linear-gradient(to bottom, #fb1979 100%);
+  color: #101827;
+  transition-duration: 120ms;
+}
+
+/* Tray */
+#tray menu {
+  background-color: #101827;
+  color: #b9e6ff;
+  padding: 4px;
+  border: 1px solid rgba(73, 172, 224, 0.25);
+}
+
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #193a68 100%);
+
+  margin: 3px;
+  color: #b9e6ff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #2964a1;
+}
+
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom, #2964a1 100%);
+  color: #fb1979;
+  font-weight: bold;
+}
+
+/* Workspaces */
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-family: "Maple Mono", monospace;
+  font-weight: bold;
+  color: #49ace0;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #ff4fa3;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: #fb1979;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: #ff8ac6;
+}
+
+/* Battery */
+#battery {
+  background-image: linear-gradient(to bottom, #193a68 100%);
+  color: #b9e6ff;
+}
+
+#battery.warning {
+  color: #101827;
+  background-image: linear-gradient(to bottom, #ff8ac6 100%);
+}
+
+#battery.critical,
+#battery.urgent {
+  color: #101827;
+  background-image: linear-gradient(to bottom, #fb1979 100%);
+}
